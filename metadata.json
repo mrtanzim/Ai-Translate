@@ -1,0 +1,8 @@
+{
+  "name": "TranslateAI - Glassmorphic Translator",
+  "description": "An advanced, multilingual AI translator featuring real-time text analysis, voice input, photo translation, and a beautiful glassmorphism UI powered by Gemini 2.5 Flash.",
+  "requestFramePermissions": [
+    "microphone",
+    "camera"
+  ]
+}

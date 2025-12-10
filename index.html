@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TranslateAI</title>
+    <script>
+      // Polyfills
+      window.process = window.process || { env: { NODE_ENV: 'development' } };
+      window.global = window;
+    </script>
+    <!-- Buffer Polyfill -->
+    <script src="https://unpkg.com/buffer@6.0.3/index.js"></script>
+    <script>
+      window.Buffer = window.Buffer || buffer.Buffer;
+    </script>
+    
+    <style>
+      body, html, #root {
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+        background-color: #f8fafc;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+      }
+      @font-face {
+        font-family: 'Ionicons';
+        src: url('https://unpkg.com/ionicons@5.5.2/dist/ionicons.ttf') format('truetype');
+      }
+    </style>
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.2.0",
+    "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+    "react-native": "https://esm.sh/react-native-web@0.19.10",
+    "react-native-web": "https://esm.sh/react-native-web@0.19.10",
+    "expo-status-bar": "https://esm.sh/expo-status-bar@~1.11.1",
+    "expo-linear-gradient": "https://esm.sh/expo-linear-gradient@~12.7.0",
+    "expo-blur": "https://esm.sh/expo-blur@~12.9.2",
+    "@expo/vector-icons": "https://esm.sh/@expo/vector-icons@14.0.0",
+    "@react-navigation/native": "https://esm.sh/@react-navigation/native@6.1.9",
+    "@react-navigation/stack": "https://esm.sh/@react-navigation/stack@6.3.20",
+    "@react-navigation/drawer": "https://esm.sh/@react-navigation/drawer@6.6.6",
+    "react-native-safe-area-context": "https://esm.sh/react-native-safe-area-context@4.8.2",
+    "react-native-screens": "https://esm.sh/react-native-screens@3.29.0",
+    "react-native-gesture-handler": "https://esm.sh/react-native-gesture-handler@2.14.0",
+    "react-native-reanimated": "https://esm.sh/react-native-reanimated@3.6.2",
+    "@react-native-async-storage/async-storage": "https://esm.sh/@react-native-async-storage/async-storage@1.21.0",
+    "expo-speech": "https://esm.sh/expo-speech@12.0.2",
+    "expo-clipboard": "https://esm.sh/expo-clipboard@5.0.1",
+    "expo-image-picker": "https://esm.sh/expo-image-picker@14.7.1",
+    "@google/genai": "https://esm.sh/@google/genai@0.1.1",
+    "@heroicons/react/24/outline": "https://esm.sh/@heroicons/react@2.0.18/24/outline",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "@heroicons/react/": "https://aistudiocdn.com/@heroicons/react@^2.2.0/"
+  }
+}
+</script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
